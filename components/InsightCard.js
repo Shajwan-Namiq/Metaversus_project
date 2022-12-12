@@ -1,9 +1,7 @@
 import React from 'react'
 
-function InsightCard() {
+export default function InsightCard() {
   return (
     <div>InsightCard</div>
   )
 }
-
-export default InsightCard

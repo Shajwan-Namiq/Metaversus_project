@@ -1,7 +1,7 @@
-
-
 {
-    "files.associations": {
-        "*.js": "javascriptreact"
-    }
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }

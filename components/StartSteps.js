@@ -1,9 +1,7 @@
- import React from 'react'
- 
- function StartSteps() {
-   return (
-     <div>StartSteps</div>
-   )
- }
- 
- export default StartSteps
+import React from 'react'
+
+export default function StartSteps() {
+  return (
+    <div>StartSteps</div>
+  )
+}

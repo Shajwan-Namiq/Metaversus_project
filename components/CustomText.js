@@ -1,9 +1,7 @@
 import React from 'react'
 
-function CustomText() {
+export default function CustomText() {
   return (
     <div>CustomText</div>
   )
 }
-
-export default CustomText

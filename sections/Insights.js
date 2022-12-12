@@ -1,8 +1,8 @@
 "use client";
-import React from 'react'
+import React from "react";
 
-export const Insights = () => {
-  return (
-    <section>Insights</section>
-  )
-}
+const Insights = () => {
+  return <section>Insights</section>;
+};
+
+export default Insights;
