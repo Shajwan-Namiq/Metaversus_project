@@ -7,6 +7,7 @@
            }
            
            .nav-menu {
+               z-index: 20;
                background: white;
                width: 250px;
                height: 100vh;
@@ -136,7 +137,7 @@
            }
            
            .search:focus {
-               width: 363px;
+               width: 300px;
                padding: 0 16px 0 0;
            }
            

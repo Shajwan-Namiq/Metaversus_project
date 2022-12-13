@@ -5,7 +5,9 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <section>About</section>
+      <div>
+        <p className="text-6xl">about</p>
+      </div>
     </>
   );
 };

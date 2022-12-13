@@ -4,6 +4,9 @@ import { useState } from "react";
 const Footer = () => {
    return (
      <>
+
+
+     
        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
        aspernatur aut error nobis nihil unde obcaecati! Ipsam sit magnam maxime
        cum blanditiis ipsum illum? Aliquam minus quis ipsa non assumenda. Lorem

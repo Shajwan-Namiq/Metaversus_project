@@ -1,10 +1,67 @@
 "use client";
-import React from 'react'
 
-const Hero = () => {
-  return (
-    <section>Hero</section>
-  )
-}
+import { motion } from "framer-motion";
 
-export default Hero
+import styles from "../styles";
+import { slideIn, staggerContainer, textVariant } from "../utils/motion";
+
+import React from "react";
+
+const Hero = () => (
+  <section className={`${styles.yPaddings}  sm:pl-16 pl-6 `}>
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.5 }}
+      className=" "
+    >
+      <div className="flex justify-center items-center flex-col relative z-10">
+        <motion.p
+          variants={textVariant(1.1)}
+          className=" text-center text-white text-5xl lg:text-9xl font-bold "
+        >
+          Metaverse
+        </motion.p>
+
+        <motion.div
+          variants={textVariant(1.2)}
+          className="py-8 flex flex-row justify-center items-center"
+        >
+          <h1 className="text-center text-white text-5xl lg:text-8xl font-bold">
+            Ma
+          </h1>
+          <div className={styles.heroDText} />
+          <h1 className="text-center text-white text-5xl lg:text-8xl font-bold">
+            Ness
+          </h1>
+        </motion.div>
+      </div>
+
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="relative w-full md:-mt-[20px] -mt-[12px]"
+      >
+        <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[1] -top-[30px]" />
+
+        <img
+          src="/cover.png"
+          alt="hero_cover"
+          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
+        />
+
+        <a href="#explore">
+          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-1">
+            <img
+              src="/stamp.png"
+              alt="stamp"
+              className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain"
+            />
+          </div>
+        </a>
+      </motion.div>
+    </motion.div>
+  </section>
+);
+
+export default Hero;
