@@ -19,3 +19,13 @@
     background: #65c4fa;
     filter: blur(150px);
 }
+
+.gradient-02 {
+    position: absolute;
+    width: 200px;
+    height: 438px;
+    top: 0px;
+    right: 0px;
+    background: #7aebfb;
+    filter: blur(190px);
+}
