@@ -19,21 +19,21 @@ const Hero = () => (
       <div className="flex justify-center items-center flex-col relative z-10">
         <motion.p
           variants={textVariant(1.1)}
-          className=" text-center text-white text-5xl lg:text-9xl font-bold "
+          className=" text-center text-white text-5xl lg:text-[154px] font-bold "
         >
-          Metaverse
+          METAVERSE
         </motion.p>
 
         <motion.div
           variants={textVariant(1.2)}
           className="py-8 flex flex-row justify-center items-center"
         >
-          <h1 className="text-center text-white text-5xl lg:text-8xl font-bold">
-            Ma
+          <h1 className="text-center text-white text-5xl lg:text-[154px] font-bold">
+            MA
           </h1>
           <div className={styles.heroDText} />
-          <h1 className="text-center text-white text-5xl lg:text-8xl font-bold">
-            Ness
+          <h1 className="text-center text-white text-5xl lg:text-[154px] font-bold">
+            NESS
           </h1>
         </motion.div>
       </div>

@@ -132,3 +132,9 @@ export const textVariant2 = {
      },
    },
  });
+
+
+
+
+
+ 
