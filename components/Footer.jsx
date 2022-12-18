@@ -22,7 +22,7 @@ const Footer = () => {
             </p>
 
             <button
-              class="inline-flex  items-center rounded-full border-2 border-[#25618b] bg-[#25618b] px-[32px] py-[18px] text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-white focus:outline-none focus:ring active:opacity-75"
+              className="inline-flex  items-center rounded-full border-2 border-[#25618b] bg-[#25618b] px-[32px] py-[18px] text-sm font-medium text-white transition-colors hover:bg-transparent hover:text-white focus:outline-none focus:ring active:opacity-75"
               href="/login"
               target="_blank"
               rel="noreferrer"
@@ -48,17 +48,15 @@ const Footer = () => {
             </p>
 
             <div className="flex flex-row gap-4">
-              {socials.map((social) => (
-                <>
-                  <div className="">
-                    <img
-                      key={social.name}
-                      src={social.url}
-                      alt={social.name}
-                      className="w-[24px] h-[24px] object-contain cursor-pointer"
-                    />
-                  </div>
-                </>
+              {socials.map((social, index) => (
+                
+                  <img
+                    key={social.name}
+                    src={social.url}
+                    alt={social.name}
+                    className="w-[24px] h-[24px] object-contain cursor-pointer"
+                  />
+               
               ))}
             </div>
           </div>

@@ -37,7 +37,7 @@ const Explore = () => {
 
           <div className="mt-[50px] flex lg:flex-row flex-col min-h-[73vh] gap-5 ">
             {exploreWorlds.map((world, index) => (
-              <>
+             
                 <ExploreCard
                   key={world.id}
                   {...world}
@@ -45,7 +45,7 @@ const Explore = () => {
                   active={active}
                   handleClick={setActive}
                 />
-              </>
+             
             ))}
           </div>
         </motion.div>

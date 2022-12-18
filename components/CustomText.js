@@ -24,7 +24,7 @@ export const TitleText = ({ title }) => (
     variants={textVariant2}
   initial="hidden"
   whileInView="show"
-    className={` mt-0 md:mt-[8px] font-bold text-[40px]  md:text-[70px] text-white `}
+    className={` mt-0 md:mt-[8px] font-bold text-[40px]  md:text-[64px] text-white `}
   >
     {title}
   </motion.p>

@@ -49,7 +49,7 @@ const GetStarted = () => {
                 </div>
 
                 <div className="mt-[25px] flex flex-col max-w-[370px] gap-[24px]  ">
-                  <div class=" ">
+                  <div className=" ">
                     {startingFeatures.map((feature, index) => (
                       <StartSteps
                         key={feature}
@@ -57,8 +57,6 @@ const GetStarted = () => {
                         text={feature}
                       />
                     ))}
-
-                  
                   </div>
                 </div>
               </div>

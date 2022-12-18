@@ -20,24 +20,22 @@ const WhatsNew = () => {
           viewport={{ once: false, amount: 0.25 }}
           className="mx-auto flex lg:flex-row flex-col gap-8"
         >
-          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div className="grid gap-16 row-gap-10 lg:grid-cols-2">
+          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
+            <div className="grid gap-10 lg:grid-cols-2">
               <motion.div
                 variants={fadeIn("right", "tween", 0.2, 1)}
-                className=" flex-[0.75] flex justify-center flex-col"
+                className=" flex-[0.75] flex  justify-center flex-col"
               >
-                <div className=" flex flex-col justify-center">
-                  <div className="">
-                    <TypingText title="| Whats New?" />
+                <div className="  ">
+                  <TypingText title="| Whats New?" />
 
-                    <TitleText title={<>What's new about Metaversus?</>} />
-                  </div>
+                  <TitleText title={<>What's new about Metaversus ?</>} />
+                </div>
 
-                  <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
-                    {newFeatures.map((feature) => (
-                      <NewFeatures key={feature.title} {...feature} />
-                    ))}
-                  </div>
+                <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
+                  {newFeatures.map((feature) => (
+                    <NewFeatures key={feature.title} {...feature} />
+                  ))}
                 </div>
               </motion.div>
 
