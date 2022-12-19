@@ -20,7 +20,7 @@ const WhatsNew = () => {
           viewport={{ once: false, amount: 0.25 }}
           className="mx-auto flex lg:flex-row flex-col gap-8"
         >
-          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
+          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-10">
             <div className="grid gap-10 lg:grid-cols-2">
               <motion.div
                 variants={fadeIn("right", "tween", 0.2, 1)}
@@ -44,7 +44,7 @@ const WhatsNew = () => {
                 className="flex justify-center items-center"
               >
                 <img
-                  className=" w-[100%] h-[100%] object-contain"
+                  className=" w-[95%] h-[100%] object-contain"
                   src="/whats-new.png"
                   alt="get-started"
                 />
