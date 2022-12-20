@@ -46,6 +46,7 @@ const Explore = () => {
                   handleClick={setActive}
                 />
              
+                
             ))}
           </div>
         </motion.div>

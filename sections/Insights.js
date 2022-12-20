@@ -28,7 +28,7 @@ const Insights = () => {
 
         <div className="mt-10">
           {insights.map((item, index) => (
-            <InsightCard key={`insight-${index}`} {...item} index={index + 1} />
+            <InsightCard key={index} {...item} index={index + 1} />
           ))}
         </div>
       </motion.div>

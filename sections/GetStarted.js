@@ -1,12 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import styles from "../styles";
 import { startingFeatures } from "../constants";
 import { TypingText, TitleText } from "../components/CustomText";
 import { staggerContainer, fadeIn, planetVariants } from "../utils/motion";
 import { StartSteps } from "../components/StartSteps";
+
 
 const GetStarted = () => {
   return (
@@ -32,7 +32,7 @@ const GetStarted = () => {
             </motion.div>
 
             <motion.div
-              variants={fadeIn("left", "tween", 0.2, 1)}
+              variants={fadeIn("right", "tween", 0.2, 1)}
               className=" flex-[0.75] flex justify-center flex-col"
             >
               <div className=" mx-0 flex flex-col justify-center">
@@ -56,6 +56,7 @@ const GetStarted = () => {
                         number={`${index < 10 ? "0" : ""} ${index + 1}`}
                         text={feature}
                       />
+                      
                     ))}
                   </div>
                 </div>

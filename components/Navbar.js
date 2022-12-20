@@ -1,11 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import styles from "../styles";
 import "../styles/navbar.css";
-import { navVariants, menuVariants } from "../utils/motion";
+import { navVariants } from "../utils/motion";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { SidebarData } from "../constants";
 
 const Navbar = () => {
@@ -19,42 +17,40 @@ const Navbar = () => {
         variants={navVariants}
         initial="hidden"
         whileInView="show"
-        className={`${styles.xPadding}  py-8`}
+        className={`  py-8`}
       >
         <div className="absolute w-[50%] h-[50%] inset-0 gradient-01" />
 
         <div className=" text-white sm:px-16 px-6 ">
           <div className="flex justify-between items-center">
-            <div>
-              <div className="search-container">
-                <form action="/search" method="get">
-                  <input
-                    className="search"
-                    id="searchleft"
-                    type="search"
-                    name="search"
-                    placeholder="Search"
-                  />
-                  <label className="button searchbutton" htmlFor="searchleft">
-                    <span className="mglass">
-                      <svg
-                        width="25"
-                        height="25"
-                        viewBox="0 0 21 21"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M20 20L15.514 15.506L20 20ZM18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5V9.5Z"
-                          stroke="white"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                        />
-                      </svg>
-                    </span>
-                  </label>
-                </form>
-              </div>
+            <div className="search-container">
+              <form action="/search" method="get">
+                <input
+                  className="search"
+                  id="searchleft"
+                  type="search"
+                  name="search"
+                  placeholder="Search"
+                />
+                <label className="button searchbutton" htmlFor="searchleft">
+                  <span className="mglass">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20 20L15.514 15.506L20 20ZM18 9.5C18 11.7543 17.1045 13.9163 15.5104 15.5104C13.9163 17.1045 11.7543 18 9.5 18C7.24566 18 5.08365 17.1045 3.48959 15.5104C1.89553 13.9163 1 11.7543 1 9.5C1 7.24566 1.89553 5.08365 3.48959 3.48959C5.08365 1.89553 7.24566 1 9.5 1C11.7543 1 13.9163 1.89553 15.5104 3.48959C17.1045 5.08365 18 7.24566 18 9.5V9.5Z"
+                        stroke="white"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                  </span>
+                </label>
+              </form>
             </div>
 
             <div>

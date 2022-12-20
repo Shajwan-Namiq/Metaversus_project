@@ -11,7 +11,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <section className={` relative z-10`}>
+      <section className="relative z-10">
         <div className="gradient-02 z-0" />
         <div className="absolute w-[50%] h-[50%] inset-9 opacity-30 top-10 left-0 gradient-01 " />
 

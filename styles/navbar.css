@@ -10,11 +10,11 @@
                z-index: 20;
                background: white;
                width: 250px;
-               height: 100vh;
+               height: 70vh;
                display: flex;
                justify-content: center;
                position: fixed;
-               top: 0;
+               top: 90px;
                left: -100%;
                transition: 850ms;
            }
