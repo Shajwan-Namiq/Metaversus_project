@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
 
           <div className="py-4"></div>
-          <div className=" flex flex-col md:flex-row  lg:justify-between lg:items-center pt-10 pb-2 border-t-4 border-gray-800  ">
+          <div className=" flex flex-col md:flex-row  lg:justify-between lg:items-center pt-10 pb-2 border-t-4 border-gray-700  ">
             <p className="pb-2 md:pb-0 text-[24px] text-white font-bold">
               METAVERSUS
             </p>
@@ -48,7 +48,7 @@ const Footer = () => {
             </p>
 
             <div className="flex flex-row gap-4">
-              {socials.map((social, index) => (
+              {socials.map((social) => (
                 
                   <img
                     key={social.name}
