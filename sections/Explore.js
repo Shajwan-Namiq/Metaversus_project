@@ -3,8 +3,7 @@
 import { motion } from "framer-motion";
 import { TitleText, TypingText } from "../components/CustomText";
 import  ExploreCard   from "../components/ExploreCard";
-import styles from "../styles";
-import { fadeIn, staggerContainer } from "../utils/motion";
+import {  staggerContainer } from "../utils/motion";
 import { exploreWorlds } from "../constants";
 import React, { useState } from "react";
 
