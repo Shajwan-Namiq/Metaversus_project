@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import "../styles/globals.css";
+import "../styles/navbar.css";
 
 const MyApp = ({ Component, pageProps }) => (
   <>
